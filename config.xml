@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="poi" version="0.1">
+  <name>Hello World</name>
+  <icon src="icon.png"/>
+  <content src="agl-hello" type="application/x-executable"/>
+  <description>A Simple Hello World</description>
+  <author>Takashi Yamamiya</author>
+  <license>MIT</license>
+</widget>

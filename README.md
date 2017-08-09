@@ -15,7 +15,8 @@ In [AGL SDK environment](http://docs.automotivelinux.org/docs/getting_started/en
 In your device:
 
     afm-util uninstall poi@0.1
+    afm-util install agl-hello.wgt
     
-Click POINT OF INTEREST icon.
+Reboot and click POINT OF INTEREST icon.
 
 Japanese article: http://qiita.com/propella/items/0258163c18a506f12a55

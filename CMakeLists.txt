@@ -1,26 +1,21 @@
+# CMakeLists.txt
+
 cmake_minimum_required(VERSION 2.8.11)
 
 project(agl-hello)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fPIC ")
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 
 find_package(Qt5Widgets REQUIRED)
-
 qt5_add_resources(agl_hello_QRC )
-
 add_executable(agl-hello main.cpp ${agl_hello_SRC} ${agl_hello_QRC})
-
 target_link_libraries(agl-hello Qt5::Core Qt5::Widgets)
 
 install (TARGETS agl-hello DESTINATION bin)
 
-##########################################################################
-# AGL binding
 configure_file(config.xml.in config.xml)
-
 add_custom_command(
 	OUTPUT agl-hello.wgt
 	DEPENDS agl-hello

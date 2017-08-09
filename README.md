@@ -17,3 +17,5 @@ In your device:
     afm-util uninstall poi@0.1
     
 Click POINT OF INTEREST icon.
+
+Japanese article: http://qiita.com/propella/items/0258163c18a506f12a55
